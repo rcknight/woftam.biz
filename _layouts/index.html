@@ -19,9 +19,13 @@
 		float: left;
 		display: inline;
 	}
-	img {
-		width: 200px;
-		height: auto;
+	.preview {
+		display: inline-block;
+		width: 300px;
+		height: 200px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	</style>
 </head>
@@ -30,9 +34,7 @@
 	<ul class="post-list">
 		{% for page in site.pages %}
 		{% if page.title != 'WOFTAM' %}
-			<li>
-				<h1><a href="{{ site.url }}{{ page.url }}"><img src="images/{{ page.gifurl }}"></img></a></h1>
-			</li>
+			<li><a href="{{ site.url }}{{ page.url }}"><span class="preview" style="background-image:url('images/{{ page.gifurl }}'"></span></a></li>
 		{% endif %}
 		{% endfor %}
 	</ul>
