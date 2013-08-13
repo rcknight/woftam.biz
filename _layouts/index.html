@@ -3,7 +3,7 @@
 			<ul class="post-list">
 				{% for page in site.pages %}
 				{% if page.title != 'WOFTAM' %}<li>
-					<h1><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>
+					<h1><a href="{{ site.url }}{{ page.url }}"><img width="400" height="300" src="images/{{ page.gifurl }}"></img></a></h1>
 				</li>{% endif %}{% endfor %}
 			</ul>
 </body></html>
