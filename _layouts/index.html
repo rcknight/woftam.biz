@@ -9,34 +9,24 @@
 		padding: 0;
 		background-color: black;
 	}
-	ul {
+	a {
 		display: inline-block;
-		margin: 0 auto;
-		padding: 0;
-		list-style: none;
-	}
-	li {
 		float: left;
-		display: inline;
-	}
-	.preview {
-		display: inline-block;
-		width: 300px;
-		height: 200px;
+		width: 10vw;
+		height: 10vh;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		text-indent: -9999em;
 	}
 	</style>
 </head>
 
 <body>
-	<ul class="post-list">
-		{% for page in site.pages %}
-		{% if page.title != 'WOFTAM' %}
-			<li><a href="{{ site.url }}{{ page.url }}"><span class="preview" style="background-image:url('images/{{ page.gifurl }}'"></span></a></li>
-		{% endif %}
-		{% endfor %}
-	</ul>
+	{% for page in site.pages %}
+	{% if page.title != 'WOFTAM' %}
+	<a href="{{ site.url }}{{ page.url }}" style="background-image:url('images/{{ page.gifurl }}')">{{ page.title }}</a>
+	{% endif %}
+	{% endfor %}
 </body>
 </html>
