@@ -1,5 +1,5 @@
 ---
 layout: "image"
-title: "Spoon"
-gifurl: "spoon.gif"
+title: "Pffff"
+gifurl: "pffff.gif"
 ---
