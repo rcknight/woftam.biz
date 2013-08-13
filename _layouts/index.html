@@ -1,10 +1,9 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <title>WOFTAM</title></head><body>
 			<ul class="post-list">
-				{% for page in site.pages %}<li>
-					{% if page.title != 'WOFTAM' %}
+				{% for page in site.pages %}
+				{% if page.title != 'WOFTAM' %}<li>
 					<h1><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>
-					{% endif %}
-				</li>{% endfor %}
+				</li>{% endif %}{% endfor %}
 			</ul>
 </body></html>
