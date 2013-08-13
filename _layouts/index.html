@@ -34,9 +34,7 @@
 	<ul class="post-list">
 		{% for page in site.pages %}
 		{% if page.title != 'WOFTAM' %}
-			<li>
-				<h1><a href="{{ site.url }}{{ page.url }}"><span class="preview" style="background-image:url('images/{{ page.gifurl }}';"></span></a></h1>
-			</li>
+			<li><a href="{{ site.url }}{{ page.url }}"><span class="preview" style="background-image:url('images/{{ page.gifurl }}'"></span></a></li>
 		{% endif %}
 		{% endfor %}
 	</ul>
