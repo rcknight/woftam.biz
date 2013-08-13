@@ -3,5 +3,6 @@ description: "Woftam"
 
 url: "http://woftam.biz"
 
+paginate: 10
 markdown: rdiscount
 permalink: pretty
