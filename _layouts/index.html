@@ -1,9 +1,34 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<title>WOFTAM</title></head><body>
-			<ul class="post-list">
-				{% for page in site.pages %}
-				{% if page.title != 'WOFTAM' %}<li>
-					<h1><a href="{{ site.url }}{{ page.url }}"><img width="400" height="300" src="images/{{ page.gifurl }}"></img></a></h1>
-				</li>{% endif %}{% endfor %}
-			</ul>
-</body></html>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>WOFTAM</title>
+	<style>
+	ul {
+		magrin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		float: left;
+		display: inline;
+	}
+	img {
+		width: 200px;
+		height: auto;
+	}
+	</style>
+</head>
+
+<body>
+	<ul class="post-list">
+		{% for page in site.pages %}
+		{% if page.title != 'WOFTAM' %}
+			<li>
+				<h1><a href="{{ site.url }}{{ page.url }}"><img src="images/{{ page.gifurl }}"></img></a></h1>
+			</li>
+		{% endif %}
+		{% endfor %}
+	</ul>
+</body>
+</html>
