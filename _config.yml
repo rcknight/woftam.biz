@@ -1,0 +1,7 @@
+name "Woftam.biz"
+description: "Woftam"
+
+url: "http://woftam.biz"
+
+markdown: rdiscount
+permalink: pretty
