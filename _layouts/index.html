@@ -2,7 +2,9 @@
 <title>WOFTAM</title></head><body>
 			<ul class="post-list">
 				{% for page in site.pages %}<li>
+					{% if page.title != 'WOFTAM' %}
 					<h1><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h1>
+					{% endif %}
 				</li>{% endfor %}
 			</ul>
 </body></html>
