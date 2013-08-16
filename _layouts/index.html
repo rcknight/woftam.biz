@@ -23,7 +23,7 @@
 </head>
 
 <body>
-	{% for page in site.pages %}
+	{% for page in site.pages | sort:date %}
 	{% if page.title != 'WOFTAM' %}
 	<a href="{{ site.url }}{{ page.url }}" style="background-image:url('images/{{ page.gifurl }}')">{{ page.title }}</a>
 	{% endif %}
