@@ -1,7 +1,9 @@
 CACHE MANIFEST
 {% for page in site.pages %}
 {% if page.title != 'WOFTAM' %}
+{% if page.title != 'cachemanifest' %}
 /images/{{ page.gifurl }}
  
+{% endif %}
 {% endif %}
 {% endfor %}
