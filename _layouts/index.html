@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" manifest="cache.manifest">
 <head>
 	<meta charset="utf-8">
 	<title>WOFTAM</title>
@@ -25,7 +25,9 @@
 <body>
 	{% for page in site.pages %}
 	{% if page.title != 'WOFTAM' %}
+	{% if page.title != 'cache.manifest' %}
 	<a href="{{ site.url }}{{ page.url }}" style="background-image:url('images/{{ page.gifurl }}')">{{ page.title }}</a>
+	{% endif %}
 	{% endif %}
 	{% endfor %}
 	<script type="text/javascript">
