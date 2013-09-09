@@ -15,6 +15,5 @@ echo "title: \"$2\"" >> $1.md;
 echo "imageName: \"$1\"" >> $1.md;
 echo "---" >> $1.md;
 
-cd images
-mogrify -format jpg "$1.gif[0]"
+mogrify -format jpg "images/$1.gif[0]"
 
