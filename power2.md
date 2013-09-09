@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Go Go Power Rangers!"
-gifurl: "power2.gif"
+gifurl: "power2"
 ---

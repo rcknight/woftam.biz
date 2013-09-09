@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Waterfall"
-gifurl: "waterfall.gif"
+gifurl: "waterfall"
 ---

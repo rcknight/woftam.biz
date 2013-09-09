@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Pug"
-gifurl: "pug.gif"
+gifurl: "pug"
 ---

@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Oh, Japan!"
-gifurl: "ohjapan.gif"
+gifurl: "ohjapan"
 ---

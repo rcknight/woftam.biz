@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Lips"
-gifurl: "lips.gif"
+gifurl: "lips"
 ---
