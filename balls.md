@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Balls"
-gifurl: "balls.gif"
+imageName: "balls"
 ---
