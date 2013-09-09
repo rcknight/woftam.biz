@@ -6,6 +6,11 @@ E_BADARGS=65
 if [ $# -ne $EXPECTED_ARGS ]
 then
   echo "Usage: `basename $0` {filename} {title}"
+  echo ""
+  echo "      {filename} is the name of a gif in the images folder"
+  echo "                 (without .gif on the end)"
+  echo ""
+  echo "      {title}    will be the page title"
   exit $E_BADARGS
 fi
 
