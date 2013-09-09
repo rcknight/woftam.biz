@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Boob"
-gifurl: "boob"
+imageName: "boob"
 ---

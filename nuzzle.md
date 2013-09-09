@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Nuzzle"
-gifurl: "nuzzle"
+imageName: "nuzzle"
 ---

@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Rotating"
-gifurl: "rotating"
+imageName: "rotating"
 ---

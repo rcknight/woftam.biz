@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "News"
-gifurl: "news"
+imageName: "news"
 ---

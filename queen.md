@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Queen"
-gifurl: "queen"
+imageName: "queen"
 ---

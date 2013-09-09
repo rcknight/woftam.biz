@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "NUGE"
-gifurl: "nuge.jpg"
+imageName: "nuge.jpg"
 ---

@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "JCVD"
-gifurl: "jcvd"
+imageName: "jcvd"
 ---

@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Football"
-gifurl: "football"
+imageName: "football"
 ---

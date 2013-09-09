@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Puppet"
-gifurl: "puppet"
+imageName: "puppet"
 ---

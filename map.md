@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Map"
-gifurl: "map"
+imageName: "map"
 ---

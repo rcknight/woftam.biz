@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Win"
-gifurl: "win"
+imageName: "win"
 ---

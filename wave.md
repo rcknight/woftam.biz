@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "Wave"
-gifurl: "wave"
+imageName: "wave"
 ---

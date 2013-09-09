@@ -1,5 +1,5 @@
 ---
 layout: "image"
 title: "CCTV"
-gifurl: "cctv"
+imageName: "cctv"
 ---
