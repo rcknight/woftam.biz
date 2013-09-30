@@ -29,7 +29,8 @@
 	<a href="{{ site.url }}{{ page.url }}" 
 	   id="{{ page.imageName }}" 
 	   style="background-image:url('images/{{ page.imageName }}.jpg')" 
-	   onmouseover="document.getElementById('{{ page.imageName }}').style.backgroundImage='url(images/{{ page.imageName }}.gif)';">{{ page.title }}</a>
+	   onmouseover="document.getElementById('{{ page.imageName }}').style.backgroundImage='url(images/{{ page.imageName }}.gif)';"
+	   onmouseout="document.getElementById('{{ page.imageName }}').style.backgroundImage='url(images/{{ page.imageName }}.jpg)';">{{ page.title }}</a>
 	{% endif %}
 	{% endif %}
 	{% endfor %}
