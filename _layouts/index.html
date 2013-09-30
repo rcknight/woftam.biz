@@ -26,7 +26,10 @@
 	{% for page in site.pages %}
 	{% if page.title != 'WOFTAM' %}
 	{% if page.title != 'cache.manifest' %}
-	<a href="{{ site.url }}{{ page.url }}" style="background-image:url('images/{{ page.imageName }}.jpg')">{{ page.title }}</a>
+	<a href="{{ site.url }}{{ page.url }}" 
+	   id="{{ page.imageName }}" 
+	   style="background-image:url('images/{{ page.imageName }}.jpg')" 
+	   onmouseover="document.getElementById('{{ page.imageName }}').style.backgroundImage='url(images/{{ page.imageName }}.gif)';">{{ page.title }}</a>
 	{% endif %}
 	{% endif %}
 	{% endfor %}
