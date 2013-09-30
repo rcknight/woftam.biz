@@ -29,8 +29,8 @@
 	<a href="{{ site.url }}{{ page.url }}" 
 	   id="{{ page.imageName }}" 
 	   style="background-image:url('images/{{ page.imageName }}.jpg')" 
-	   onmouseover="document.getElementById('{{ page.imageName }}').style.backgroundImage='url(images/{{ page.imageName }}.gif)';"
-	   onmouseout="document.getElementById('{{ page.imageName }}').style.backgroundImage='url(images/{{ page.imageName }}.jpg)';">{{ page.title }}</a>
+	   onmouseover="mouseOver(this)"
+	   onmouseout="mouseOut(this)';">{{ page.title }}</a>
 	{% endif %}
 	{% endif %}
 	{% endfor %}
@@ -46,6 +46,18 @@
 			var s = document.getElementsByTagName('script')[0];
 			s.parentNode.insertBefore(t, s);
 		})();
+	</script>
+
+	<script type="text/javascript">
+		function mouseOver(el) {
+			var imageName = el.id;
+			el.style.backgroundImage='url(images/' + imageName + '.gif)';
+		}
+
+		function mouseOut(el) {
+			var imageName = el.id;
+			el.style.backgroundImage='url(images/' + imageName + '.jpg)';
+		}
 	</script>
 </body>
 </html>
