@@ -14,11 +14,14 @@ then
   exit $E_BADARGS
 fi
 
+#get current date and time
+dateTime=$(date "+%Y-%m-%d %H:%M:%S")
+
 echo "---" > $1.md;
 echo "layout: \"image\"" >> $1.md;
 echo "title: \"$2\"" >> $1.md;
 echo "imageName: \"$1\"" >> $1.md;
+echo "date: $dateTime" >> $1.md;
 echo "---" >> $1.md;
 
 mogrify -format jpg "images/$1.gif[0]"
-
