@@ -33,7 +33,7 @@
 	{% if page.title != 'cache.manifest' %}
 	<a href="{{ site.url }}{{ page.url }}" 
 	   id="{{ page.imageName }}" 
-	   style="background-image:url('images{{ page.imageName }}.jpg')" 
+	   style="background-image:url('images/{{ page.imageName }}.jpg')" 
 	   onmouseover="mouseOver(this)"
 	   onmouseout="mouseOut(this)">{{ page.title }}</a>
 	{% endif %}
