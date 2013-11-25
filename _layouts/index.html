@@ -29,7 +29,7 @@
 
 <body>
 	{% for page in site.pages %}
-	{% if page.title != 'WOFTAM' %}
+	{% if page.title != 'WOFTAM' and page.title != 'Feed' and page.title != 'Preview' %}
 	{% if page.title != 'cache.manifest' %}
 	<a href="{{ site.url }}{{ page.url }}" 
 	   id="{{ page.imageName }}" 
