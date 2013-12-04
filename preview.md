@@ -1,4 +1,0 @@
----
-layout: "preview"
-title: "Preview"
----
