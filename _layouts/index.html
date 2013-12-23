@@ -4,40 +4,35 @@
 	<meta charset="utf-8">
 	<title>WOFTAM</title>
 	<style>
-	* {
-		margin: 0;
-		padding: 0;
-		background-color: black;
-	}
-	a {
-		display: inline-block;
-		float: left;
-		width: 12.5vw;
-		height: 12.5vh;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		text-indent: -9999em;
-	}
+		* {
+			margin: 0;
+			padding: 0;
+			background-color: black;
+		}
+		a {
+			display: inline-block;
+			float: left;
+			width: 12.5vw;
+			height: 12.5vh;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			text-indent: -9999em;
+		}
 	</style>
-	<script>
-		if (window.navigator && window.navigator.loadPurpose === "preview") {
-			window.location.href = "http://woftam.biz/preview";
-		};
-	</script>
 </head>
 
 <body>
 	{% for page in site.pages %}
-	{% if page.title != 'WOFTAM' and page.title != 'Feed' and page.title != 'Preview' %}
-	{% if page.title != 'cache.manifest' %}
-	<a href="{{ site.url }}{{ page.url }}" 
-	   id="{{ page.imageName }}" 
-	   style="background-image:url('images/{{ page.imageName }}.jpg')" 
-	   onmouseover="mouseOver(this)"
-	   onmouseout="mouseOut(this)">{{ page.title }}</a>
-	{% endif %}
-	{% endif %}
+		{% if page.title != 'WOFTAM' and page.title != 'Feed' and page.title != 'Preview' %}
+			{% if page.title != 'cache.manifest' %}
+			<a href="{{ site.url }}{{ page.url }}" 
+			   id="{{ page.imageName }}" 
+			   style="background-image:url('images/{{ page.imageName }}.jpg')" 
+			   onmouseover="mouseOver(this)"
+			   onmouseout="mouseOut(this)">{{ page.title }}</a>
+			{% endif %}
+		{% endif %}
 	{% endfor %}
 
 	<script type="text/javascript">
